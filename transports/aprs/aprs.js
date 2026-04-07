@@ -1,6 +1,6 @@
 const net = require("net");
-const { buildAprsMessage, chunkPayload } = require("../packet_aprs");
-const { buildAx25UiFrame, buildKissFrame } = require("../kiss_ax25");
+const { buildAprsMessage, chunkPayload } = require("./packet_aprs");
+const { buildAx25UiFrame, buildKissFrame } = require("./kiss_ax25");
 
 const DIREWOLF_HOST = process.env.DIREWOLF_HOST || "127.0.0.1";
 const DIREWOLF_PORT = parseInt(process.env.DIREWOLF_PORT || "8001", 10);

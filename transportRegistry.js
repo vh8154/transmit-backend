@@ -1,4 +1,4 @@
-const aprsTransport = require("./transports/aprs");
+const aprsTransport = require("./transports/aprs/aprs");
 
 const registry = {
   aprs: aprsTransport,
